@@ -22,8 +22,9 @@ def ack(m, n, arr):
         arr[m][n] = arr[m - 1][arr[m][n - 1]]
         return
 
+
 def dp(m, n):
-    max = 100*n
+    max = 100 * n
     arr = [([0] * (max)) for i in range(m + 1)]
     for i in range(m + 1):
         for j in range(max):
